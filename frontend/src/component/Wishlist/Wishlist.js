@@ -49,8 +49,7 @@ const Wishlist = ({ history }) => {
           <div className="wishlistPage">
             <div className="wishlistHeader">
               <p>Book</p>
-              {/* <p>Quantity</p>
-              <p>Subtotal</p> */}
+              
             </div>
 
             {wishlistItems &&

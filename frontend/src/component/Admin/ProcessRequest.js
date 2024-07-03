@@ -107,7 +107,6 @@ const ProcessRequest = ({ history, match }) => {
               <div
                 style={{
                   display: request.requestStatus === "Returned" ? "none" : "block",
-                  // display: request.requestStatus === "Paid(Late Fine)" ? "none" : "block",
                  
                 }}
               >
@@ -141,13 +140,6 @@ const ProcessRequest = ({ history, match }) => {
                        {request.requestStatus === "Returned(late fine)" && (
                         <option value="Not Paid(Late Fine)">Not Paid(Late Fine)</option>
                       )}
-                       {/* {request.requestStatus === "Returned" && (
-                        <option value="Paid">Paid</option>
-                      )}
-                      
-                      {request.requestStatus === "Returned" && (
-                        <option value="Not Paid">Not Paid</option>
-                      )} */}
                        {request.requestStatus === "Not Paid" && (
                         <option value="Paid">Paid</option>
                       )}
