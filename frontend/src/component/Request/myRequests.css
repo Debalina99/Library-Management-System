@@ -1,0 +1,112 @@
+.myRequestsPage {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0 7vmax;
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#myRequestsHeading {
+  text-align: center;
+  font: 400 1.4vmax "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  background-color: rgb(44, 44, 44);
+}
+
+.myRequestsTable {
+  background-color: white;
+}
+
+.myRequestsTable div {
+  font: 300 1.2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.678);
+  border: none;
+}
+
+.myRequestsTable a {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.myRequestsTable a:hover {
+  color: rgb(27, 90, 51);
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: rgb(27, 90, 51);
+  padding: 1vmax !important;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+  font: 500 1.3vmax "Roboto" !important;
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .myRequestsPage {
+    padding: 0;
+    height: 93vh;
+  }
+
+  #myRequestsHeading {
+    font: 400 2.2vmax "Roboto";
+    padding: 4vw;
+  }
+
+  .myRequestsTable div {
+    font: 300 4vw "Roboto";
+  }
+
+  .MuiDataGrid-columnHeader {
+    padding: 20px !important;
+  }
+
+  .MuiDataGrid-columnHeader div {
+    font: 500 5vw "Roboto" !important;
+  }
+}
+
+#scroll-container {
+  border: 3px solid rgba(0, 0, 0, 0.459);
+  border-radius: 5px;
+  overflow: hidden;
+  height: auto;
+}
+#scroll-text{
+  font: 400 1.6vmax "Roboto";
+  color: red;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding: 1vmax 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+#note{
+  color: red;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+

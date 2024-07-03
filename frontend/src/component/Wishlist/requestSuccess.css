@@ -1,0 +1,44 @@
+.requestSuccess {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.requestSuccess > svg {
+  font-size: 7vmax;
+  color: rgb(27, 90, 51);
+}
+.requestSuccess > p {
+  font-size: 2vmax;
+}
+.requestSuccess > a {
+  background-color: rgb(27, 90, 51);
+  color: white;
+  border: none;
+  padding: 1vmax 4vmax;
+  cursor: pointer;
+  font: 400 1vmax "Roboto";
+  text-decoration: none;
+  margin: 2vmax;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .requestSuccess > a {
+    padding: 3vw 6vw;
+    font: 400 4vw "Roboto";
+    margin: 2vmax;
+  }
+
+  .requestSuccess > svg {
+    font-size: 20vw;
+  }
+  .requestSuccess > p {
+    margin: 2vmax;
+    font-size: 5vw;
+  }
+}

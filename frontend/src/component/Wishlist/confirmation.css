@@ -1,0 +1,145 @@
+.confirmationContainer {
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 65vh;
+  margin: 2vmax;
+}
+
+.confirmationForm {
+  width: 22%;
+  height: 100%;
+}
+
+.confirmationForm > h1 {
+  font: 400 2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.753);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding: 1vmax 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.confirmationForm > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.confirmationInput {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  outline: none;
+}
+
+.confirmationForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.confirmationFormBtn {
+  border: none;
+  background-color: rgb(27, 90, 51);
+  color: white;
+  font: 300 0.9vmax "Roboto";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  border-radius: 30px;
+}
+
+.confirmationFormBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+@media screen and (max-width: 600px) {
+  .confirmationForm {
+    width: 90%;
+  }
+
+  .confirmationForm > p {
+    font: 400 8vw "Roboto";
+    padding: 4vw 0;
+    width: 60%;
+  }
+
+  .confirmationForm > div {
+    margin: 10vw 0;
+  }
+
+  .confirmationInput {
+    padding: 4vw 10vw;
+  }
+
+  .confirmationForm > div > svg {
+    font-size: 6vw;
+  }
+
+  .confirmationFormBtn {
+    font: 300 4vw "Roboto";
+    padding: 4vw;
+  }
+}
+#scroll-container {
+  border: 3px solid rgba(0, 0, 0, 0.459);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#scroll-text{
+  font: 400 1.6vmax "Roboto";
+  color: rgba(0, 0, 0, 0.753);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding: 1vmax 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+#note{
+  color: red;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

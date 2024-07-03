@@ -1,0 +1,204 @@
+.confirmRequestPage {
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+}
+
+.confirmRequestPage > div:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.confirmUserDetails {
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.confirmUserDetails > p {
+  font: 400 1.8vmax "Roboto";
+}
+
+.confirmUserDetailsBox,
+.confirmWishlistItemsContainer {
+  margin: 2vmax;
+}
+
+.confirmUserDetailsBox > div {
+  display: flex;
+  margin: 1vmax 0;
+}
+
+.confirmUserDetailsBox > div > p {
+  font: 400 1.2vmax "Roboto";
+  color: black;
+}
+.confirmUserDetailsBox > div > span {
+  margin: 0 1vmax;
+  font: 100 1.2vmax "Roboto";
+  color: #575757;
+}
+
+.confirmWishlistItems > p {
+  font: 400 1.8vmax "Roboto";
+}
+
+.confirmWishlistItems {
+  padding: 5vmax;
+  padding-top: 2vmax;
+}
+
+.confirmWishlistItemsContainer {
+  max-height: 20vmax;
+  overflow-y: auto;
+}
+
+.confirmWishlistItemsContainer > div {
+  display: flex;
+  font: 500 1.2vmax "Roboto";
+  align-items: center;
+  justify-content: space-between;
+  margin: 2vmax 0;
+}
+
+.confirmWishlistItemsContainer > div > img {
+  width: 3vmax;
+}
+
+.confirmWishlistItemsContainer > div > a {
+  color: #575757;
+  margin: 0 2vmax;
+  width: 60%;
+  text-decoration: none;
+}
+
+.confirmWishlistItemsContainer > div > span {
+  font: 100 1vmax "Roboto";
+  color: #5e5e5e;
+}
+
+.requestSummary {
+  padding: 7vmax;
+}
+
+.requestSummary > p {
+  text-align: center;
+  font: 400 1.8vmax "Roboto";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  padding: 1vmax;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.requestSummary > div > div {
+  display: flex;
+  font: 300 1vmax "Roboto";
+  justify-content: space-between;
+  margin: 2vmax 0;
+}
+.requestSummary > div > div > span {
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.requestSummaryTotal {
+  display: flex;
+  font: 300 1vmax "Roboto";
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.363);
+  padding: 2vmax 0;
+}
+
+.requestSummary > button {
+  background-color: rgb(27, 90, 51);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.5s;
+  font: 400 1vmax "Roboto";
+}
+
+.requestSummary > button:hover {
+  background-color: rgb(27, 90, 51);
+}
+
+@media screen and (max-width: 600px) {
+  .confirmRequestPage {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+
+  .confirmRequestPage > div:last-child {
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+  }
+
+  .confirmUserDetails > p {
+    font: 400 6vw "Roboto";
+  }
+
+  .confirmUserDetailsBox > div {
+    display: flex;
+    margin: 6vw 0;
+  }
+
+  .confirmUserDetailsBox > div > p {
+    font: 400 4vw "Roboto";
+  }
+  .confirmUserDetailsBox > div > span {
+    font: 100 4vw "Roboto";
+  }
+
+  .confirmWishlistItems > p {
+    font: 400 6vw "Roboto";
+  }
+
+  .confirmWishlistItemsContainer {
+    max-height: 50vw;
+  }
+
+  .confirmWishlistItemsContainer > div {
+    font: 400 4vw "Roboto";
+    margin: 4vw 0;
+  }
+
+  .confirmWishlistItemsContainer > div > img {
+    width: 10vw;
+  }
+
+  .confirmWishlistItemsContainer > div > a {
+    margin: 0;
+    width: 30%;
+  }
+
+  .confirmWishlistItemsContainer > div > span {
+    font: 100 4vw "Roboto";
+  }
+
+  .requestSummary {
+    padding: 12vw;
+  }
+
+  .requestSummary > p {
+    font: 400 6vw "Roboto";
+    padding: 4vw;
+  }
+
+  .requestSummary > div > div {
+    font: 300 4vw "Roboto";
+  }
+
+  .requestSummaryTotal {
+    font: 300 4vw "Roboto";
+    padding: 5vw 0;
+  }
+
+  .requestSummary > button {
+    padding: 4vw;
+    margin: 4vw auto;
+    font: 400 4vw "Roboto";
+  }
+}

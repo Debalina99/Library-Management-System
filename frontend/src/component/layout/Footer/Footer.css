@@ -1,0 +1,82 @@
+footer {
+  background-image: url("https://th.bing.com/th/id/R.171be8f7d3a51b01b367486113430a47?rik=j1B7dMKkzuqqZA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2f7%2f6%2f888655-download-free-library-background-images-1920x1200.jpg&ehk=Ov1Gao0TC65eoT85%2fSjNiJuD3j1ryoGAnT0t3U7PNOU%3d&risl=&pid=ImgRaw&r=0");
+  
+  margin-top: 10vmax;
+  padding: 2vmax;
+  /* background-color: rgb(34, 33, 33); */
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.leftFooter {
+  /* background-color: rgba(0, 0, 0, 0.651); */
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > h4 {
+
+  font-family: "Roboto";
+  font-size: 1vmax;
+}
+.leftFooter > p {
+
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.midFooter {
+  /* background-color: rgba(0, 0, 0, 0.651); */
+  width: 60%;
+
+  text-align: center;
+}
+
+.midFooter > h1 {
+
+  font-size: 4vmax;
+  font-family: "Roboto";
+  color: #8fe8f8;
+}
+.midFooter > p {
+  max-width: 60%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  width: 20%;
+  /* background-color: rgba(0, 0, 0, 0.651); */
+padding:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+.rightFooter > a:hover {
+  color: #eb4034;
+}
